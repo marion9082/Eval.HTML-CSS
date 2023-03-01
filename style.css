@@ -141,6 +141,7 @@ img {
     max-width: 1300px;
     margin: 0 auto;
     position: relative;
+    overflow-x: hidden;
 }
 
 .sliding-container {
@@ -150,7 +151,6 @@ img {
     width: 100%;
     color: darkmagenta;
     animation: carousel 20s ease-in-out infinite;
-    overflow-x: hidden;
 }
 
 .testimonial-text {
