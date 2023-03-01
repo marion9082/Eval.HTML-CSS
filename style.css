@@ -149,7 +149,8 @@ img {
     align-items: center;
     width: 100%;
     color: darkmagenta;
-    animation: carousel 22s ease-in-out infinite;
+    animation: carousel 20s ease-in-out infinite;
+    overflow-x: hidden;
 }
 
 .testimonial-text {
