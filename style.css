@@ -5,6 +5,8 @@
     padding: 0;
 }   
 
+
+
 :root {
 /* palette */
 --shade-silver: #aaabb1;
@@ -17,43 +19,11 @@
 /* Fonts */
 
 
- /* Font-size */
---text-xs: 0.8rem;
---text-sm: 1.4rem;
---text-base: 1.6rem;
---text-md: 1.8rem;
---text-lg: 2rem;
---text-xl: 2.4rem;
---text-2xl: 3rem;
---text-3xl: 3.6rem;
---text-4xl: 4.2rem;
---text-5xl: 5rem;
---text-6xl: 6rem;
---text-7xl: 7.2rem;
-
- /* Spacing */
---space-1: 0.1rem;
---space-2: 0.2rem;
---space-4: 0.4rem;
---space-6: 0.6rem;
---space-8: 0.8rem;
---space-10: 1rem;
---space-12: 1.2rem;
---space-16: 1.6rem;
---space-20: 2rem;
---space-28: 2.8rem;
---space-36: 3.6rem;
---space-44: 4.4rem;
---space-52: 5.2rem;
---space-60: 6rem;
---space-72: 7.2rem;
---space-84: 8.4rem;
---space-96: 9.6rem;
 }
 
 
 h1 {
-    font-size: var(--text-4xl);
+    font-size: 4.2rem;
 }
 
 body {
@@ -105,12 +75,14 @@ img {
     font-size: 1.2rem;
     font-weight: 700;
     transition: all 0.4s ease;
-    margin-left: var(--space-10);
+    margin-left: 1rem;
 }
 
 #navbarSupportedContent {
     margin-top: 30px;
 }
+
+
 
 .nav-height {
     padding: 0;
@@ -196,6 +168,9 @@ img {
 
 .card border-0 {
     z-index: -1;
+    width: 100%;
+    height: 100%;
+    margin: 60px;
 }
 
 .img-cards {
@@ -207,8 +182,8 @@ img {
     width: 100%;
     background: linear-gradient(90deg, #e3d068 0.5%, #7c8346 90%);
     color: black;
-    margin-bottom: var(--space-28);
-    margin-top: var(--space-36);
+    margin-bottom: 2.8rem;
+    margin-top: 3.6rem;
     margin-left: 0;
     margin-right: 0;
     border-radius: 5px;
@@ -223,12 +198,12 @@ img {
 }
 
 .card-content {
-    padding: var(--space-20);
+    padding: 2rem;
 }
 
 .top-card-content {
     display: flex;
-    margin-bottom: var(--space-20);
+    margin-bottom: 2rem;
     margin-left: auto;
 }
 
@@ -239,17 +214,11 @@ img {
 
 
 .card-description {
-    font-size: var(--text-base);
+    font-size: 1.6rem;
 }
 
 
 /********** NEWS ************/
-
-.anim {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 20px;
-}
 
 .container-news {
     text-align: center;
@@ -257,10 +226,8 @@ img {
 
 .container-div-p {
     text-align: center;
-    font-size: var(--text-md);
-    text-align: center;
+    font-size: 1.8rem;
 }
-
 
 .form {
     width: 100vw;
@@ -270,7 +237,6 @@ img {
     align-items: center;
     padding-top: 20px;
 }
-
 
 .form-input-text{
     border-radius: 10px;
@@ -297,18 +263,93 @@ img {
 .footer-text {
     margin-top: 50px;
     text-align: center;
-    font-size: var(--text-base);
+    font-size: 1.6rem;
 }
 
 .footer-nav-link{
     margin: 50px 50px 50px 50px;
 }
 
-
 .footer-end{
     text-align: center;
-    font-size: var(--text-xs);
+    font-size: 0.8rem;
     margin-top: 60px;
     line-height: 10px;
 }
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap');
+
+/* CSS for text animation */
+
+.text-anim {
+    z-index: 1;
+    color: #fff;
+    font-family: "Roboto Mono", monospace;
+    font-size: 8vw;
+    width: 100%;
+    padding: 50px;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    letter-spacing: 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.2));
+}
+
+.text-anim span:nth-child(1) {
+    color: var(--shade-flash-green);
+    animation: animText 1s ease-in-out infinite;
+}
+
+.text-anim span:nth-child(2) {
+    color: var(--shade-black-green);
+    animation: animText 1s ease-in-out infinite;
+    animation-delay: 0.8s;
+}
+
+.text-anim span:nth-child(3) {
+    color: var(--shade-green);
+    animation: animText 1s ease-in-out infinite;
+    animation-delay: 1.2s;
+}
+
+.text-anim span:nth-child(4) {
+    color: var(--shade-white-green);
+    animation: animText 1s ease-in-out infinite;
+    animation-delay: 1.6s;
+}
+
+@keyframes animText {
+    0% {
+        font-weight: 200;
+    }
+
+    50% {
+        font-weight: 800;
+    }
+
+    100% {
+        font-weight: 200;
+    }
+}
+
+.text-anim span:nth-child(5) {
+    color: var(--shade-flash-green);
+    font-weight: 800;
+    animation: animMark 1s ease-in-out infinite;
+}
+
+@keyframes animMark {
+    0% {
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(30deg);
+    }
+}
