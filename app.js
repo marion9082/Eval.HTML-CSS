@@ -9,3 +9,4 @@ window.addEventListener('scroll',  function(event) {
         navbar.classList.remove('nav-height');
     }
 })
+
