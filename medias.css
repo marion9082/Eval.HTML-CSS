@@ -2,16 +2,22 @@
     .testimonial {
         height: 500px;
     }
+
+    .text-img {
+        width: 60%;
+    }
 }
 
 @media screen and (min-width: 992px) {
     .testimonial {
         height: 600px;
     }
+
 }
 
 @media (min-width: 1200px) {
-    .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1440px;
+
+    .text-img {
+        width: 40%;
     }
 }

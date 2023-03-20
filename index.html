@@ -1,155 +1,247 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>L'aide dons chacun a besoin</title>
-    <meta name="description" content="L'aide dont tout le monde a besoin">
-    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="medias.css">
-    <!-- CSS Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>L'aide dons chacun a besoin</title>
+        <meta name="description" content="L'aide dont tout le monde a besoin" />
+        <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
 
+        <!-- CSS Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="medias.css" />
+    </head>
+    <body>
+        <!-- Header NAVBAR LOGO DONS-->
+        <header id="top ">
+            <nav
+                class="navbar navbar-expand-lg bg-light navbar-light fixed-top p-2"
+                id="main-nav"
+            >
+                <div class="navbar-brand">
+                    <img
+                        src="assets/images/icon-navbar.png"
+                        alt="Logo planète"
+                    />
+                </div>
+                <div>
+                    <a
+                        href="https://paypal.me/MarionRonron"
+                        class="btn btn-success btn-lg"
+                        type="button stretched-link"
+                        target="_blank"
+                        >Faire un don
+                        <i class="fa-solid fa-heart"></i>
+                    </a>
+                </div>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse bg-light"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#top"
+                                >Accueil</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="evenements.html"
+                                >Nos évènements</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nos-actions"
+                                >Nos actions</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#end">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
-    
-    <!-- Header NAVBAR LOGO DONS-->
-    <header id="top">
-        <div class="container">
-            <div class="row">
-                <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top top-0" id="main-nav">
-                    <div class="container container-fluid bg-light">
-                        <div class="navbar-brand col-lg-1">
-                            <img src="assets/images/icon-navbar.png" alt="Logo planète" id="planete">
+            <!---------- TEXT-------->
+
+            <section class="testimonial">
+                <div class="text-slideshow-container">
+                    <div class="sliding-container">
+                        <div class="text-slide">
+                            <p class="testimonial-text text-center fw-bold">
+                                "L'information et l'humanitaire sont le remède
+                                contre les douleurs."
+                            </p>
+                            <p class="testimonial-author text-center fw-bold">
+                                Bernard Kouchner
+                            </p>
                         </div>
-                        <div class="header col-lg-3">
-
-                            <a href="https://paypal.me/MarionRonron" class="btn btn-success btn-lg" type="button stretched-link" target="_blank">Faire un don
-                            <i class="fa-solid fa-heart"></i>
-                        </a>
+                        <div class="text-slide">
+                            <p class="testimonial-text text-center fw-bold">
+                                “Le système de l'humanité ne sera connu qu'à la
+                                fin de l'humanité. ”
+                            </p>
+                            <p class="testimonial-author text-center fw-bold">
+                                Pierre Joseph Proudhon
+                            </p>
                         </div>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse bg-light col-lg-7 col-xl-9 " id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-8">
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#top">Accueil</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="evenements.html">Nos évènements</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#nos-actions">Nos actions</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#end">Contact</a>
-                                </li>
-                            </ul>
+                        <div class="text-slide">
+                            <p class="testimonial-text text-center fw-bold">
+                                “L'humanité devra mettre un terme à la guerre,
+                                ou la guerre mettra un terme à l'humanité.”
+                            </p>
+                            <p class="testimonial-author text-center fw-bold">
+                                John Fitzgerald Kennedy
+                            </p>
+                        </div>
+                        <div class="text-slide">
+                            <p class="testimonial-text text-center fw-bold">
+                                “Le pouvoir des mots est la force de
+                                l'humanite...”
+                            </p>
+                            <p class="testimonial-author text-center fw-bold">
+                                Franck Dunand
+                            </p>
                         </div>
                     </div>
-                </nav>
-            </div>
-        </div>
+                </div>
+            </section>
+        </header>
 
-        
-        <!---------- TEXT-------->
-        
-        <section class="testimonial">
-            <div class="text-slideshow-container">
-                <div class="sliding-container">
-            
-            <div class="text-slide">
-            <p class="testimonial-text text-center fw-bold">"L'information et l'humanitaire sont le remède contre les douleurs."</p>
-            <p class="testimonial-author text-center fw-bold">Bernard Kouchner</p>
-            </div>
-            <div class="text-slide">
-            <p class="testimonial-text text-center fw-bold">“Le système de l'humanité ne sera connu qu'à la fin de l'humanité. ”</p>
-            <p class="testimonial-author text-center fw-bold">Pierre Joseph Proudhon</p>
-            </div>
-            <div class="text-slide">
-            <p class="testimonial-text text-center fw-bold">“L'humanité devra mettre un terme à la guerre, ou la guerre mettra un terme à l'humanité.”</p>
-            <p class="testimonial-author text-center fw-bold">John Fitzgerald Kennedy</p>
-            </div>
-            <div class="text-slide">
-            <p class="testimonial-text text-center fw-bold">“Le pouvoir des mots est la force de l'humanite...”</p>
-            <p class="testimonial-author text-center fw-bold">Franck Dunand</p>
-            </div>
+        <!------- Section 5 cards --------->
 
+        <section class="card border-0">
+            <div class="container">
+                <div class="main-card">
+                    <img
+                        src="assets/images/refugies.jpg"
+                        alt="refugies"
+                        class="profile-image"
+                        id="nos-actions"
+                    />
+                    <div class="card-content">
+                        <div class="top-card-content">
+                            <h1 class="main-title">Population en Danger</h1>
+                        </div>
+                        <p class="card-description fs-6 text">
+                            L’urgence. Elle intervient après une rupture,
+                            souvent brutale, liée à une catastrophe naturelle, à
+                            une crise politique, à la menace d’une épidémie.
+                            Toute la vie quotidienne est soudainement
+                            transformée.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="main-card">
+                    <img
+                        src="assets/images/construire.jpg"
+                        alt="construire"
+                        class="profile-image"
+                    />
+                    <div class="card-content">
+                        <div class="top-card-content">
+                            <h1 class="main-title">Aider dans la durée</h1>
+                        </div>
+                        <p class="card-description fs-6 text">
+                            Dans les contextes où les risques de catastrophes
+                            naturelles, d’épidémies ou de conflits sont élevés,
+                            SOLIDARITÉS INTERNATIONAL contribue à renforcer les
+                            capacités de résilience des populations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="main-card">
+                    <img
+                        src="assets/images/benevolat urgence.jpg"
+                        alt="urgence"
+                        class="profile-image"
+                    />
+                    <div class="card-content">
+                        <div class="top-card-content">
+                            <h1 class="main-title">Urgence</h1>
+                        </div>
+                        <p class="card-description fs-6 text">
+                            Lors d'une urgence (un conflit, une catastrophe
+                            naturelle ou une épidémie), les besoins vitaux des
+                            populations (boire, manger, s'abriter) se doivent
+                            d'être couverts le plus rapidement, le plus
+                            dignement et le plus efficacement possible.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="main-card">
+                    <img
+                        src="assets/images/eau .jpg"
+                        alt="eau"
+                        class="profile-image"
+                    />
+                    <div class="card-content">
+                        <div class="top-card-content">
+                            <h1 class="main-title">
+                                Aide aux problèmes hydriques
+                            </h1>
+                        </div>
+                        <p class="card-description fs-6 text fs-lg-1 text">
+                            A la suite d’une catastrophe naturelle, d’un
+                            déplacement de populations ou d’un conflit, le
+                            manque d’eau potable et les conditions sanitaires
+                            précaires, parfois aggravés par la surpopulation,
+                            génèrent des risques importants pour la santé et
+                            pour la survie des sinistrés.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="main-card">
+                    <img
+                        src="assets/images/enfants-pauvres-ramassent-ordures-pour-vendre.jpg"
+                        alt="enfants travaillant"
+                        class="profile-image"
+                    />
+                    <div class="card-content">
+                        <div class="top-card-content">
+                            <h1 class="card-name">
+                                Lutter contre l'insécurité alimentaire
+                            </h1>
+                        </div>
+                        <p class="card-description fs-6 text">
+                            D’après un rapport de l’ONU, la faim dans le monde
+                            progresse et pourrait avoir touché jusqu’à 828
+                            millions de personnes en 2021 Selon la dernière
+                            édition du rapport L’État de la sécurité alimentaire
+                            et de la nutrition dans le monde, le monde perd du
+                            terrain dans sa lutte pour éliminer la faim et la
+                            malnutrition.
+                        </p>
+                    </div>
                 </div>
             </div>
-    </section>
-</header>
+        </section>
 
-    <!------- Section 5 cards --------->
+        <!------NEWS ----->
 
-    <section class="card border-0">
-    <div class="container-fluid about-content">
-        <div class="container">
-        <div class="main-card">
-            <img src="assets/images/refugies.jpg" alt="refugies" class="profile-image" id="nos-actions">
-            <div class="card-content">
-            <div class="top-card-content">
-                <h1 class="main-title">Population en Danger</h1>
-            </div>
-            <p class="card-description fs-6 text">L’urgence. Elle intervient après une rupture, souvent brutale, liée à une catastrophe naturelle, à une crise politique, à la menace d’une épidémie. Toute la vie quotidienne est soudainement transformée.</p>
-            </div>
-        </div>
-
-        <div class="main-card">
-            <img src="assets/images/construire.jpg" alt="construire" class="profile-image">
-            <div class="card-content">
-            <div class="top-card-content">
-                <h1 class="main-title">Aider dans la durée</h1>
-            </div>
-            <p class="card-description fs-6 text">Dans les contextes où les risques de catastrophes naturelles, d’épidémies ou de conflits sont élevés, SOLIDARITÉS INTERNATIONAL contribue à renforcer les capacités de résilience des populations.</p>
-            </div>
-        </div>
-
-        <div class="main-card">
-            <img src="assets/images/benevolat urgence.jpg" alt="urgence" class="profile-image">
-            <div class="card-content">
-            <div class="top-card-content">
-                <h1 class="main-title">Urgence</h1>
-            </div>
-            <p class="card-description fs-6 text">Lors d'une urgence (un conflit, une catastrophe naturelle ou une épidémie), les besoins vitaux des populations (boire, manger, s'abriter) se doivent d'être couverts le plus rapidement, le plus dignement et le plus efficacement possible.</p>
-            </div>
-        </div>
-
-        <div class="main-card">
-            <img src="assets/images/eau .jpg" alt="eau" class="profile-image">
-            <div class="card-content">
-            <div class="top-card-content">
-                <h1 class="main-title">Aide aux problèmes hydriques</h1>
-            </div>
-            <p class="card-description fs-6 text fs-lg-1 text">A la suite d’une catastrophe naturelle, d’un déplacement de populations ou d’un conflit, le manque d’eau potable et les conditions sanitaires précaires, parfois aggravés par la surpopulation, génèrent des risques importants pour la santé et pour la survie des sinistrés.</p>
-            </div>
-        </div>
-
-        <div class="main-card">
-            <img src="assets/images/enfants-pauvres-ramassent-ordures-pour-vendre.jpg" alt="enfants travaillant" class="profile-image">
-            <div class="card-content">
-            <div class="top-card-content">
-                <h1 class="card-name">Lutter contre l'insécurité alimentaire</h1>
-            </div>
-            <p class="card-description fs-6 text">D’après un rapport de l’ONU, la faim dans le monde progresse et pourrait avoir touché jusqu’à 828 millions de personnes en 2021
-                Selon la dernière édition du rapport L’État de la sécurité alimentaire et de la nutrition dans le monde, le monde perd du terrain dans sa lutte pour éliminer la faim et la malnutrition.</p>
-            </div>
-        </div>
-        </div>
-    </div>
-    </section>
-
-
-
-    <!------NEWS ----->
-
-
-<section class="container-news" id="end">
-        <!-- <div class="anim"> -->
+        <section class="container-news" id="end">
+            <!-- <div class="anim"> -->
             <div class="text-anim">
                 <span>SU</span>
                 <span>IV</span>
@@ -158,65 +250,84 @@
                 <span>-</span>
                 <span>NOUS</span>
             </div>
-        <p class="container-div-p">Pour rester connecté et informé , abonnez-vous !</p>
+            <p class="container-div-p">
+                Pour rester connecté et informé , abonnez-vous !
+            </p>
 
-    <section class="form row">
-        <form class="form-input container overflow-hidden">
-            <div class="row gy-8">
-                <div class="col-12">
-            <input type="name" id="nameF" class="form-input-text col-11 ms-6 p-2 m-3" placeholder="Votre prénom" required>
-            <input type="email" class="form-input-text col-11 ms-6 p-2 m-3" placeholder="E-mail" required>
-            <button class="button-main btn-lg col-6 ms-4 p-7 m-3">S'inscrire</button>
-            </div>
+            <section class="form row">
+                <form class="form-input container overflow-hidden">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-xl-3 mx-auto">
+                            <input
+                                type="name"
+                                id="nameF"
+                                class="form-input-text m-2"
+                                placeholder="Votre prénom"
+                                required
+                            />
+                            <input
+                                type="email"
+                                class="form-input-text m-2"
+                                placeholder="E-mail"
+                                required
+                            />
+                            <button
+                                class="button-main btn-lg col-6 ms-4 p-7 m-3"
+                            >
+                                S'inscrire
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Footer -->
+            <section>
+                <div class="container footer-nav-link">
+                    <div class="row">
+                        <div class="col-3"></div>
+                    </div>
                 </div>
-        </form>
-    </section>
-
-
-    <!-- Footer -->
-    <section>
-        <div class="container footer-nav-link">
-            <div class="row">
-                <div class="mt-5 col-md-3 col-sm-6 col-xs-12 text-center">
+            </section>
+            <footer class="footer">
+                <div class="footer-text">
+                    <h2>Soyez solidaire !</h2>
+                </div>
+                <div>
                     <a href="https://instagram.com">
-                        <img src="assets/images/instagram.svg" alt="instagram">
+                        <i class="fa-brands fa-instagram social"></i>
                     </a>
-                </div>
-                <div class="mt-5 col-md-3 col-sm-6 col-xs-12 text-center">
                     <a href="https://www.tiktok.com/fr">
-                        <img src="assets/images/tiktok.svg" alt="tiktok">
+                        <i class="fa-brands fa-tiktok social"></i>
                     </a>
-                </div>
-                <div class="mt-5 col-md-3 col-sm-6 col-xs-12 text-center">
                     <a href="https://facebook.com">
-                        <img src="assets/images/facebook.svg" alt="facebook">
+                        <i class="fa-brands fa-facebook social"></i>
                     </a>
-                </div>
-                <div class="mt-5 col-md-3 col-sm-6 col-xs-12 text-center">
                     <a href="https://twitter.com">
-                        <img src="assets/images/twitter.svg" alt="twitter">
+                        <i class="fa-brands fa-square-twitter social"></i>
                     </a>
                 </div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
-            
-            <div class="footer-text">
-                <h2>Soyez solidaire !</h2>
-            </div>
-            <div class="footer-end">
-                <p>L'aide solidaire ©️ 2023</p>
-                <p>Created by Marion CHE</p>
-            </div>
-        </footer>
-        <!-- Scripts BOOTSTRAP, POPPER-->
-        <script src="app.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" 
-        crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/71b9d58ab4.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    </section>
-</body>
+                <div class="footer-end">
+                    <p>L'aide solidaire ©️ 2023</p>
+                    <p>Created by Marion CHE</p>
+                </div>
+            </footer>
+            <!-- Scripts BOOTSTRAP, POPPER-->
+            <script src="app.js"></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+                integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+                crossorigin="anonymous"
+            ></script>
+            <script
+                src="https://kit.fontawesome.com/71b9d58ab4.js"
+                crossorigin="anonymous"
+            ></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+                crossorigin="anonymous"
+            ></script>
+        </section>
+    </body>
 </html>
