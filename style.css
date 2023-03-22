@@ -8,12 +8,15 @@
 
 
 /* Fonts */
-
+--ff-a: 'Archivo Narrow', sans-serif;
+--ff-j: 'Julius Sans One', sans-serif;
 }
 
 
 h1 {
     font-size: 3.2rem;
+    font-family: var(--ff-a);
+    font-weight: 600;
 }
 
 body {
@@ -24,6 +27,8 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+    font-family: var(--ff-a);
+    font-weight: 400;
 }
 
 ul {
@@ -45,9 +50,6 @@ ul {
     color: var(--shade-silver);
     font-weight: 300;
 }
-
-
-
 
 
 /**************** HEADER ***********/
@@ -74,6 +76,15 @@ ul {
   /* transition pour le retour */
     transition: all 0.4s ease;
     height: 100%;
+}
+
+
+.navbar a {
+    color: black;
+    font-family:var(--ff-j);
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: flex;
 }
 
 
@@ -107,6 +118,8 @@ ul {
 .testimonial-text {
     font-size: 1.4rem;
     margin-bottom: 0.6rem;
+    font-family: var(--ff-a);
+    font-size: 400;
 }
 
 .text-slide {
@@ -119,6 +132,7 @@ ul {
 .testimonial-author {
     color: purple;
     margin: 45px 5px 0px 5px;
+    font-family: var(--ff-a);
 }
 
 @keyframes carousel {
@@ -195,6 +209,8 @@ ul {
 
 .card-description {
     font-size: 1.6rem;
+    font-family: var(--ff-j);
+    font-weight: bold;
 }
 
 
@@ -207,6 +223,7 @@ ul {
 .container-div-p {
     text-align: center;
     font-size: 1.8rem;
+    font-family: var(--ff-j);
 }
 
 .form {
@@ -217,6 +234,7 @@ ul {
     justify-content: center;
     align-items: center;
     padding-top: 20px;
+    font-family: var(--ff-a);
 }
 
 .form-input-text{
@@ -245,6 +263,7 @@ ul {
     margin-top: 50px;
     text-align: center;
     font-size: 1.6rem;
+    font-family: var(--ff-a);
 }
 
 .footer-nav-link{
@@ -336,21 +355,13 @@ ul {
 
 /**************** HEADER ***********/
 
-.navbar a {
-    color: black;
-    font-family: 'lato';
-    font-size: 1.3rem;
-    font-weight: 700;
-    display: flex;
-}
-
 .img-header {
     background-image: url(assets/images/indian-g9fd87fac9_1920.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
     width: 100%;
-
+    font-family: var(--ff-j);
 }
 
 /********* Evenements  ***********/
@@ -403,6 +414,7 @@ ul {
     color: #43562d; 
 }
 
-#lirelasuite #more{
-    display:none;
+#aPropos {
+    font-family: var(--ff-j);
+    font-weight: bold;
 }
